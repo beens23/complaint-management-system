@@ -28,7 +28,7 @@
 	}
 	function itDeptCheck()
 	{
-		if(!$_SESSION['name'] || $_SESSION['department']!='IT')
+		if(!$_SESSION['name'] || $_SESSION['department']!='admin')
 		{
 			header("Location: index.php");
 		}

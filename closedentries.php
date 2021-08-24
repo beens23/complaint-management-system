@@ -35,7 +35,7 @@
         <h3><b>Closed Complaint Entries:</b></h3>
     </div>
     <br><br><br>
-    <form action=""  method="POST">
+    <form action=""  method="POST" id = "abc">
     <div class="row">
     <div class="col">
         <p><label> Department: <br>(Leave it blank if you want to search for all the departments) <select id="DEPT" name="department">
@@ -83,7 +83,7 @@
     <th scope="col">Location</th>
     <th scope="col">Assets Number</th>
     <th scope="col">Description</th>
-    <th scope="col">exProgress</th>
+    <th scope="col">ExProgress</th>
     <th scope="col">Complaint Filed at:</th>
     <th scope="col">Complaint closed at:</th>
     </tr>

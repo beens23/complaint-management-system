@@ -1,6 +1,7 @@
 body{
     background: #ffffff;
     padding-left: 5px;
+    font-size: x-large;
 }
 #frm{
     border: solid #053742 1px;
@@ -10,12 +11,14 @@ body{
     margin: 120px auto;
     background: #f1fafc;
     padding: 50px;
+    font-size: large;
 }
 #btn{
     color: #fff;
     background: #0197d1;
     padding: 7px;
     margin-left: 70%;
+    font-size: large;
 }  
 
 table {
@@ -24,6 +27,7 @@ table {
     background: #f1fafc;
     border-collapse: separate;
     border-spacing: 50px 0;
+    font-size: large;
   }
   
   td {
@@ -47,6 +51,8 @@ table {
     display: block;
   }
 #abc{
-  background: #f1fafc;
   padding: 1px;
+  font-size: large;
 }
+
+/* font-size: x-large; */

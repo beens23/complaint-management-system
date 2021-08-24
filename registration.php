@@ -8,6 +8,27 @@
 <link href="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.css" rel="stylesheet">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
+
+	<!-- <script language="javascript">
+
+		function admSelectCheck(nameSelect)
+		{
+			if(nameSelect){
+				admOptionValue = document.getElementById("admOption").value;
+				if(admOptionValue != 0){
+					document.getElementById("admDivCheck").style.display = "";
+				}
+				else{
+					document.getElementById("admDivCheck").style.display = "none";
+				}
+			}
+			else{
+				document.getElementById("admDivCheck").style.display = "none";
+			}
+		}
+
+	</script> -->
+	
 </head>
 <body>
 	<img src="images/logo.jpg" alt="AGCL Logo" width="280" height="80">
@@ -17,35 +38,42 @@
 	</div>
 	<div id = "frm" >
 		<h1>Create Account:</h1>
-		<form action="" onsubmit= "return matchPassword()" method="POST">
+		<form action="" onsubmit= "return matchPassword()" method="POST" >
     <p><label> Email: <br> </label><input type="email" name="email" required></p>
 			<p><label> Username: <br> </label><input type="text" name="name" required></p>
 
 
 			<p>
         <label> Department: <br></label>
+		<input list="browsers" name="department" id="browser">
+		<datalist id="browsers">
+		<!-- <select id="department" name="department" required>-->
+			<option value="IT">IT Department</option>
+			<option value="O & M">O & M Department</option>
+			<option value="GMB">GMB Department</option>
+			<option value="Pipeline">Pipeline Department</option>
+			<option value="Instrumentation">Instrumentation Department</option>
+			<option value="HSE">HSE Department</option>
+			<option value="HRA">HRA Department</option>
+			<option value="F&A">F&A Department</option>
+			<option value="Materials">Materials Department</option>
+			<option value="P&U">P&U Department</option>
+			<option value="Transport">Transport Department</option>
+			<option value="Security">Security Department</option>
+			<option value="SCADA">SCADA Department</option>
+			<option value="Civil">Civil Department</option>
+			<option value="Land">Land Department</option>
+			<option value="Medical"> Medical Department</option>
+        <!--</select> --></datalist>
+
+		<!-- <div id="admDivCheck" style="display:none;">
+			admin selected
+		</div> -->
+		<!-- <div id="others" style="display: none;">
+			<input type="text" id="department" name="department"><br>
+		</div> -->
+		<!-- <input type="text" name="department" id="department" required> -->
 		
-		<div id="abc"><select id="department" name="department"  required >
-			<option value="IT">IT </option>
-                    <option value="O & M">O & M </option>
-                    <option value="GMB">GMB </option>
-                    <option value="Pipeline">Pipeline</option>
-                    <option value="Instrumentation">Instrumentation</option>
-                    <option value="HSE">HSE</option>
-                    <option value="HRA">HRA</option>
-                    <option value="F&A">F&A</option>
-                    <option value="Materials">Materials</option>
-                    <option value="P&U">P&U</option>
-                    <option value="Transport">Transport</option>
-                    <option value="Security">Security</option>
-                    <option value="SCADA">SCADA</option>
-                    <option value="Civil">Civil</option>
-                    <option value="Land">Land</option>
-                    <option value="Medical"> Medical</option>
-        </select></div>
-<script>
-$('#department').editableSelect();
-</script>
       </p>
 
 

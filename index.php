@@ -58,7 +58,7 @@
             $_SESSION['department']=$row['department'];
             $_SESSION['password']=$row['passsword'];
             debug_to_console($_SESSION['department']);
-            if($_SESSION['department']=='IT'){
+            if($_SESSION['department']=="admin"){
                 ?>
                 <script>
                     window.location.replace("itdept.php");
